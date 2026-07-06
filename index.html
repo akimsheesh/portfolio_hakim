@@ -12,11 +12,13 @@
   <header>
     <nav class="navbar">
       <div class="logo">Nur Hakim</div>
+
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#services">Expertise</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -25,46 +27,59 @@
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-text">
+      <p class="hero-label">Multimedia Computing Portfolio</p>
+
       <h1>Hi, I'm Muhammad Nur Hakim</h1>
-      <h2>Multimedia Computing Student | Mobile Apps Developer | 2D & 3D Animator</h2>
+
+      <h2>Mobile Apps Developer | 2D & 3D Animator | Multimedia Student</h2>
+
       <p>
-        I create interactive applications, educational games, and multimedia
-        projects using Flutter, Unity, Blender, and web technologies.
+        I create interactive applications, educational games, animation,
+        video editing projects, and multimedia experiences using Flutter,
+        Unity, Blender, and web technologies.
       </p>
+
       <div class="hero-buttons">
         <a href="#projects" class="btn">Check My Work</a>
+        <a href="MuhammadNurHakim_Resume.pdf" class="btn secondary" target="_blank">Download Resume</a>
         <a href="#contact" class="btn secondary">Contact Me</a>
       </div>
     </div>
+
     <div class="hero-image">
-      <img src="profile.jpeg" alt="Hakim Profile Photo" />
+      <img src="Nur Hakim.png" alt="Hakim Profile Photo" />
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="section">
     <h2 class="section-title">About Me</h2>
+
     <div class="about-container">
       <p>
         I am a Multimedia Computing student from Universiti Tun Hussein Onn Malaysia (UTHM).
-        I am passionate about mobile app development, game development, UI/UX design,
+        I am interested in mobile app development, game development, UI/UX design,
         animation, and multimedia production. I enjoy building projects that combine
         creativity and technology to create meaningful user experiences.
       </p>
 
       <div class="skills">
         <h3>Skills</h3>
+
         <div class="skill-tags">
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
           <span>Flutter</span>
+          <span>Dart</span>
           <span>Unity</span>
           <span>C#</span>
           <span>Supabase</span>
           <span>Blender</span>
           <span>Canva</span>
           <span>UI/UX</span>
+          <span>Video Editing</span>
+          <span>Animation</span>
         </div>
       </div>
     </div>
@@ -73,63 +88,255 @@
   <!-- Projects Section -->
   <section id="projects" class="section">
     <h2 class="section-title">My Projects</h2>
+    <p class="section-subtitle">
+      Click any project card to view the demo video, role, tools, and key features.
+    </p>
 
     <div class="project-grid">
-      <div class="project-card">
-        <img src="project.jpeg" alt="BarakahQurban App" />
-        <h3>BarakahQurban App</h3>
-        <p>
-          A mobile app prototype for qurban management with registration, slot booking,
-          status tracking, and e-certificate features.
-        </p>
+
+      <div class="project-card featured-card" onclick="openProject('barakah')">
+        <img src="BarakahQurban.jpeg" alt="BarakahQurban App" />
+
+        <div class="project-content">
+          <span class="project-label">Featured Project</span>
+
+          <h3>BarakahQurban App</h3>
+
+          <p>
+            A mobile app prototype for qurban management with registration,
+            slot booking, status tracking, payment simulation, and e-certificate features.
+          </p>
+
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Supabase</span>
+            <span>Mobile App</span>
+          </div>
+
+          <span class="watch-btn">View Details</span>
+        </div>
       </div>
 
-      <div class="project-card">
-        <img src="project2.png" alt="Unit 4: Haiwan" />
-        <h3>Unit 4: Haiwan</h3>
-        <p>
-          A learning apps that focusing on topic 4, Animal. Contains 4 mini games with interactive elements to help primary school students learn about animals in an interactive and fun way.
-        </p>
+      <div class="project-card" onclick="openProject('unit4')">
+        <img src="unit4.png" alt="Unit 4 Haiwan" />
+
+        <div class="project-content">
+          <h3>Unit 4: Haiwan</h3>
+
+          <p>
+            A learning app focused on Topic 4: Animals, including mini games and
+            interactive learning elements for primary school students.
+          </p>
+
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Education</span>
+            <span>Mini Games</span>
+          </div>
+
+          <span class="watch-btn">View Details</span>
+        </div>
       </div>
 
-      <div class="project-card">
-        <img src="project3.jpeg" alt="DreamWash App" />
-        <h3>DreamWash App</h3>
-        <p>
-          A car wash booking application with user, admin, and owner modules,
-          designed to support service booking and multi-branch management.
-        </p>
+      <div class="project-card" onclick="openProject('dreamwash')">
+        <img src="DreamWash.jpeg" alt="DreamWash App" />
+
+        <div class="project-content">
+          <h3>DreamWash App</h3>
+
+          <p>
+            A car wash booking application with user, admin, and owner modules
+            for service booking and multi-branch management.
+          </p>
+
+          <div class="project-tags">
+            <span>Mobile App</span>
+            <span>UI/UX</span>
+            <span>Booking System</span>
+          </div>
+
+          <span class="watch-btn">View Details</span>
+        </div>
       </div>
 
-      <div class="project-card">
-        <img src="project1.png" alt="Hero Jawi" />
-        <h3>Hero Jawi</h3>
-        <p>
-          An education game to help primary school students learn Jawi letters with enjoyment and excitement.
-        </p>
+      <div class="project-card" onclick="openProject('herojawi')">
+        <img src="HeroJawi.png" alt="Hero Jawi" />
+
+        <div class="project-content">
+          <h3>Hero Jawi</h3>
+
+          <p>
+            An educational game that helps primary school students learn Jawi letters
+            through interactive gameplay.
+          </p>
+
+          <div class="project-tags">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>Educational Game</span>
+          </div>
+
+          <span class="watch-btn">View Details</span>
+        </div>
       </div>
+
+      <div class="project-card" onclick="openProject('sulam')">
+        <img src="Sulam.png" alt="SULAM Learning Apps" />
+
+        <div class="project-content">
+          <h3>SULAM Learning Apps</h3>
+
+          <p>
+            A multimedia learning application created for primary school students
+            with interactive modules and mini games.
+          </p>
+
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Learning App</span>
+            <span>Multimedia</span>
+          </div>
+
+          <span class="watch-btn">View Details</span>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openProject('animation')">
+        <img src="Freelance.jpeg" alt="Freelance Animation" />
+
+        <div class="project-content">
+          <h3>Freelance Animation</h3>
+
+          <p>
+            Animation and editing work focused on visual storytelling, transitions,
+            motion, and multimedia presentation.
+          </p>
+
+          <div class="project-tags">
+            <span>Blender</span>
+            <span>Animation</span>
+            <span>Editing</span>
+          </div>
+
+          <span class="watch-btn">View Details</span>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openProject('scam')">
+        <img src="PartTime.jpeg" alt="Part Time Job Scam Animation" />
+
+        <div class="project-content">
+          <h3>Part Time Job Scam</h3>
+
+          <p>
+            A short awareness animation about online part-time job scams using
+            storytelling and visual communication.
+          </p>
+
+          <div class="project-tags">
+            <span>Animation</span>
+            <span>Awareness</span>
+            <span>Storytelling</span>
+          </div>
+
+          <span class="watch-btn">View Details</span>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openProject('vr')">
+        <img src="VR.png" alt="VR Project Demo" />
+
+        <div class="project-content">
+          <h3>VR Project Demo</h3>
+
+          <p>
+            A virtual reality project demo showcasing interaction, navigation,
+            and immersive multimedia experience.
+          </p>
+
+          <div class="project-tags">
+            <span>Unity</span>
+            <span>VR</span>
+            <span>3D Interaction</span>
+          </div>
+
+          <span class="watch-btn">View Details</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- Expertise Section -->
   <section id="services" class="section">
     <h2 class="section-title">My Expertise</h2>
+
     <div class="service-grid">
       <div class="service-card">
         <h3>Mobile App Development</h3>
-        <p>I develop mobile application interfaces and functional prototypes using Flutter.</p>
+        <p>
+          I develop mobile application interfaces and functional prototypes using Flutter.
+        </p>
       </div>
+
       <div class="service-card">
         <h3>Game Development</h3>
-        <p>I create educational and interactive games using Unity and C#.</p>
+        <p>
+          I create educational and interactive games using Unity and C#.
+        </p>
       </div>
+
       <div class="service-card">
         <h3>Animation & Multimedia</h3>
-        <p>I produce 2D/3D animation and multimedia content for learning and storytelling.</p>
+        <p>
+          I produce 2D/3D animation and multimedia content for learning and storytelling.
+        </p>
       </div>
+
       <div class="service-card">
         <h3>UI/UX Design</h3>
-        <p>I design user-friendly layouts, interfaces, and visual concepts for digital products.</p>
+        <p>
+          I design user-friendly layouts, interfaces, and visual concepts for digital products.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section">
+    <h2 class="section-title">Achievements & Highlights</h2>
+
+    <div class="achievement-grid">
+      <div class="achievement-card">
+        <h3>Final Year Project</h3>
+        <p>
+          Developed BarakahQurban, a mobile qurban management application prototype
+          using Flutter and Supabase.
+        </p>
+      </div>
+
+      <div class="achievement-card">
+        <h3>SULAM Learning Project</h3>
+        <p>
+          Contributed to educational multimedia applications for primary school students
+          with interactive learning modules and mini games.
+        </p>
+      </div>
+
+      <div class="achievement-card">
+        <h3>Animation & Video Editing</h3>
+        <p>
+          Produced animation and video editing works involving storytelling,
+          motion, transitions, and multimedia presentation.
+        </p>
+      </div>
+
+      <div class="achievement-card">
+        <h3>VR / 3D Development</h3>
+        <p>
+          Participated in VR and 3D multimedia development involving Unity,
+          interaction design, and immersive user experience.
+        </p>
       </div>
     </div>
   </section>
@@ -137,17 +344,62 @@
   <!-- Contact Section -->
   <section id="contact" class="section contact">
     <h2 class="section-title">Contact Me</h2>
-    <p>If you would like to collaborate or know more about my work, feel free to reach out.</p>
+
+    <p>
+      If you would like to collaborate or know more about my work,
+      feel free to reach out.
+    </p>
+
     <div class="contact-links">
-      <a href="mailto:mnurhakimhanif@gmail.com">Email</a>
+      <a href="mailto:mnurhakimhanif@gmail.com?subject=Portfolio%20Inquiry">Email</a>
       <a href="https://github.com/akimsheesh" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/nur-hakim-2b000b339" target="_blank">LinkedIn</a>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2026 Muhammad Nur Hakim. All rights reserved.</p>
   </footer>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="project-modal">
+    <div class="project-modal-content">
+      <span class="close-btn" onclick="closeProject()">&times;</span>
+
+      <div class="modal-video-wrapper">
+        <video id="projectVideo" controls>
+          <source id="projectVideoSource" src="" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="modal-info">
+        <h2 id="modalTitle">Project Title</h2>
+
+        <p id="modalDescription">
+          Project description.
+        </p>
+
+        <div class="modal-detail-grid">
+          <div>
+            <h4>My Role</h4>
+            <p id="modalRole">Role</p>
+          </div>
+
+          <div>
+            <h4>Tools Used</h4>
+            <p id="modalTools">Tools</p>
+          </div>
+        </div>
+
+        <div class="modal-features">
+          <h4>Key Features</h4>
+          <ul id="modalFeatures"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
